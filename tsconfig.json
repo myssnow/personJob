@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2017",
+    "outDir": "lib/service-dist",
+    "watch": false,
+    "pretty": true
+  },
+  "include": [
+    "lib/server/**/*.ts"
+  ]
+}

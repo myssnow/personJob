@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name"      :"person",
+    "script"    :"index.js",
+    "watch"     :["./lib/server/**","index.js","webpack.config.js"],
+    "max_memory_restart": "400M",
+    "max_restarts": 3,
+    "args":"--color"
+  },{
+    "name"       :"person-compiler",
+    "script"     :"devServer/index.js",
+    "watch"      :["devServer/*","webpack.config.js"],
+    "max_memory_restart": "400M",
+    "max_restarts": 3,
+    "args":"--color"
+  }]
+}
